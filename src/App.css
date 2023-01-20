@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.app-container {
+  background-image: url('https://thumbs.dreamstime.com/b/time-management-concept-retro-black-alarm-clock-alerting-seven-o-clock-chalkboard-background-retro-black-alarm-clock-173251878.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 768px) {
+  .app-container {
+    background-image: url('https://thumbs.dreamstime.com/b/time-management-concept-retro-black-alarm-clock-alerting-seven-o-clock-chalkboard-background-retro-black-alarm-clock-173251878.jpg');
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stopwatch-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 64px;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 992px) {
+  .stopwatch-container {
+    align-items: flex-start;
+    margin-left: 160px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.stopwatch {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch {
+    font-size: 64px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 310px;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0px 4px 40px rgba(23, 31, 70, 0.16);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer-image {
+  margin-right: 8px;
+}
+
+.timer-text {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.stopwatch-timer {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .stopwatch-timer {
+    font-size: 64px;
   }
+}
+
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.start-button {
+  background-color: #1db05f;
+  margin-right: 24px;
+}
+
+.stop-button {
+  background-color: #ef0d36;
+  margin-right: 24px;
+}
+
+.reset-button {
+  background-color: #eaa800;
 }
